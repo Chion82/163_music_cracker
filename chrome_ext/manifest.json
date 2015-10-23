@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "163 Music Hacker",
+  "description": "网易云音乐版权限制破解工具 Author: Chion82",
+  "version": "1.0",
+
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+  
+}
