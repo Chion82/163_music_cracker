@@ -6,13 +6,13 @@ function requestListener(details) {
 	      //redirectUrl : 'http://localhost:3838/core.js'
 	  };
   }
-  /*
-   if (details.url.includes('pt_content_song.js')) {
+  
+   if (details.url.includes('pt_content_playlist.js')) {
 	  console.log('Redirecting request...');
 	  return {
-	      redirectUrl : 'http://localhost:3838/pt_content_song.js'
+	      redirectUrl : 'http://localhost:3838/pt_content_playlist.js'
 	  };
-  }*/
+  }
 }
 
 chrome.webRequest.onBeforeRequest.addListener(requestListener, 
