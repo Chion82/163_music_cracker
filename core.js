@@ -65,7 +65,10 @@
                     // actual.responseText is the ajax result
 
                     //Change song status to 1
-                    var responseText = this.responseText.replace(/"status":-1/g, '"status":1');
+                    var responseText = this.responseText.replace(/"status":-[0-9]+/g, '"status":1');
+                    responseText = responseText.replace(/"fee":-1/g, '"fee":0');
+
+
                     var enableHighQuality = (getCookie('playHighQuality') == '1');
 
                     //Change song URL to High quality mp3.
