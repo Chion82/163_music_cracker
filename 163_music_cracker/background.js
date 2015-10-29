@@ -2,8 +2,8 @@ function requestListener(details) {
   if (details.url.includes('core.js')) {
 	  console.log('Redirecting request...');
 	  return {
-	      //redirectUrl : 'https://cdn.rawgit.com/Chion82/163_music_cracker/bc1154f085bbc39e2d028a499de4e7317dabcfa2/core.js'
-	      redirectUrl : 'http://localhost:3838/core.js'
+	      redirectUrl : 'https://cdn.rawgit.com/Chion82/163_music_cracker/373fe0398dd8c3380db8bb06d06d38c6f3bee082/core.js'
+	      //redirectUrl : 'http://localhost:3838/core.js'
 	  };
   }
   
